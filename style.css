@@ -1,12 +1,166 @@
-/*colours:*/
-/*#FFFFFF*/
-/*#FFFFFF 70%*/
-/*#5454D4*/
-/*#F04037*/
-/*#F04037 10%*/
-/*#FEDC5A*/
-/*#FEDC5A 10%*/
-/*#1E1E20*/
-/*#1E1E20 50%*/
-/*#19191B*/
-/*#292D32*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+:root {
+    /*-------color-palette-------------*/
+    --white-color: #FFFFFF; /*separately for header button*/
+    --text-color: #FFFFFF;
+    --text-color-70: rgba(255, 255, 255, 0.7);
+
+    --bg-main-color: #19191B;
+
+    --bg-secondary-color: #1E1E20;
+    --bg-secondary-color-50: rgba(30, 30, 32, 0.5);
+
+    --accent-primary-color: #5454D4;
+    --accent-primary-color-10: rgba(84, 84, 212, 0.1);
+    --accent-secondary-color: #F04037;
+    --accent-secondary-color-10: rgba(240, 64, 55, 0.1);
+    --accent-tertiary-color: #FEDC5A;
+    --accent-tertiary-color-10: rgba(254, 220, 90, 0.1);
+
+    /*--color11: #292D32;       ???    */
+
+    /*-------other-------------*/
+    --main-padding: 0 8.3vw;
+}
+
+body {
+    padding: var(--main-padding);
+    background: var(--bg-main-color);
+    color: var(--text-color);
+    font-family: "Lato", sans-serif;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.logo {
+    font-family: "Montserrat", sans-serif;
+    font-size: 28px;
+    line-height: 140%; /* 39.2px */
+}
+button{
+    cursor: pointer;
+}
+
+/*--header-----------------------*/
+header {
+    padding: 40px 0 23px;
+}
+
+.logo > img {
+    width: 40px;
+    height: 40px;
+}
+
+nav ul {
+    list-style-type: none;
+    gap: 2.2em;
+}
+
+nav a {
+    color: var(--text-color-70);
+    font-size: 18px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--accent-primary-color);
+    /*font-weight: 600;           i don't like it -_- */
+}
+
+header button {
+    background: none;
+    color: var(--text-color);
+    border-radius: 5px;
+    border: 1px solid var(--white-color);
+    /*backdrop-filter: blur(1px);       cool, but useless right now*/
+
+    text-align: center;
+    font-size: 16px;
+    line-height: 1;
+    padding: 12px 50px;
+}
+
+header button:hover {
+    border-color: var(--accent-primary-color);
+    color: var(--accent-primary-color);
+}
+
+/*--MAIN------------------------*/
+/*--cover-----------------------*/
+
+/*--video-----------------------*/
+video{
+    width: 100%;
+}
+
+/*--services--------------------*/
+.icon{
+    border-radius: 50%;
+    width: 69px;
+    height: 69px;
+}
+.code {
+    background: var(--accent-primary-color-10) url('img/code-1.svg') center no-repeat;
+}
+
+.layer {
+    background: var(--accent-secondary-color-10) url('img/layer.svg') center no-repeat;
+}
+
+.code-2 {
+    background: var(--accent-tertiary-color-10) url('img/code-2.svg') center no-repeat;
+}
+
+.align-vertically{
+    background: var(--accent-tertiary-color-10) url('img/align-vertically.svg') center no-repeat;
+}
+
+.camera{
+    background: var(--accent-primary-color-10) url('img/camera.svg') center no-repeat;
+}
+
+.video-play{
+    background: var(--accent-secondary-color-10) url('img/video-play.svg') center no-repeat;
+}
+
+.services>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 45px;
+}
+
+/*--portfolio-------------------*/
+.projects>div div{
+    width: 28%;
+    padding: 1.6vw; /* 24px */
+    border-radius: 14px;
+    background: var(--bg-secondary-color);
+}
+.projects img{
+    width: 100%;
+    border-radius: 12px;
+
+}
+
+/*--contact-us------------------*/
+
+
+/*--footer----------------------*/
+
