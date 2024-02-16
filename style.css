@@ -51,6 +51,12 @@ body {
     font-family: "Montserrat", sans-serif;
     font-size: 28px;
     line-height: 140%; /* 39.2px */
+
+    align-items: center;
+}
+.logo span{
+    line-height: 1;
+    margin-left: 8px;
 }
 button{
     cursor: pointer;
