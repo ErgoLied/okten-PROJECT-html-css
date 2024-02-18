@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0133f4eb-1330-4fb2-a216-bbd07919033a" name="Changes" comment="fix logo">
+    <list default="true" id="0133f4eb-1330-4fb2-a216-bbd07919033a" name="Changes" comment="fix fonts">
+      <change afterPath="$PROJECT_DIR$/media-mobile-500-300.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/metting.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/media/meeting.mp4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +77,8 @@
       <updated>1707846360392</updated>
       <workItem from="1707846361382" duration="16357000" />
       <workItem from="1708008103451" duration="1407000" />
-      <workItem from="1708192887352" duration="5960000" />
+      <workItem from="1708192887352" duration="5973000" />
+      <workItem from="1708259396940" duration="14364000" />
     </task>
     <task id="LOCAL-00001" summary="structure is done">
       <option name="closed" value="true" />
@@ -101,7 +104,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708101355191</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fix fonts">
+      <option name="closed" value="true" />
+      <created>1708213870529</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1708213870529</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,6 +133,7 @@
     <MESSAGE value="structure is done" />
     <MESSAGE value="add content, create basic style" />
     <MESSAGE value="fix logo" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix logo" />
+    <MESSAGE value="fix fonts" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix fonts" />
   </component>
 </project>

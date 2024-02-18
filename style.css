@@ -23,13 +23,19 @@
 
     /*-------other-------------*/
     --main-padding: 0 8.3vw;
+    --mobile-padding: 0 6.15vw;
+    --font-size: 10px;
 }
 
 body {
-    padding: var(--main-padding);
+    margin: 0;
     background: var(--bg-main-color);
     color: var(--text-color);
     font-family: "Lato", sans-serif;
+    font-size: var(--font-size);
+}
+header, main, footer, article{          /* body:nth-child(n) not working */
+    padding: var(--main-padding);       /* body{padding} ruin article part*/
 }
 
 .flex {
@@ -44,7 +50,7 @@ body {
 .grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
+    gap: 1.7vw;  /* 24px */
 }
 
 .logo {
@@ -52,6 +58,8 @@ body {
     font-size: 28px;
     line-height: 140%; /* 39.2px */
 
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 .logo span{
@@ -63,26 +71,33 @@ button{
 }
 
 h1{
-    font-size: 80px;
+    font-size: 8em;
     font-weight: 400;
-    line-height: 84px; /* 105% */
+    line-height: 105%; /* 84px */
 }
 h2{
-    font-size: 60px;
+    font-size: 6em;
     font-weight: 400;
-    line-height: 70px; /* 116.667% */
+    line-height: 116.667%; /* 70px */
 }
 h3{
-    font-size: 28px;
+    font-size: 2.8em;
     font-weight: 600;
     letter-spacing: -0.75px;
 }
 p{
     color: var(--text-color-70);
-    font-size: 21px;
-    line-height: 39px; /* 185.714% */
+    font-size: 2.1em;
+    line-height: 185.714%; /* 39px */
     letter-spacing: -0.657px;
 }
+h1,h2,h3,p{
+    margin: 0;
+}
+h1, section:nth-child(n+2){
+    margin-top: 15vh;
+}
+
 button{
     height: 60px;
     border: none;
@@ -93,7 +108,7 @@ button{
     font-family: "Lato", sans-serif;
     color: var(--text-color);
     text-align: center;
-    font-size: 20px;
+    font-size: 2em;
     font-weight: 700;
 }
 button:hover{
@@ -121,7 +136,7 @@ nav ul {
 
 nav a {
     color: var(--text-color-70);
-    font-size: 18px;
+    font-size: 1.8em;
     text-decoration: none;
 }
 
@@ -138,7 +153,7 @@ header button {
     /*backdrop-filter: blur(1px);       cool, but useless right now*/
 
     text-align: center;
-    font-size: 16px;
+    font-size: 1.6em;
     line-height: 1;
     padding: 12px 50px;
 }
@@ -153,10 +168,14 @@ header button:hover {
 .cover>div{
     width: 50%;
 }
+.cover p{
+    margin: 24px 0 50px;
+}
 
 /*--video-----------------------*/
 video{
     width: 100%;
+    margin-top: 50px;
 }
 
 /*--services--------------------*/
@@ -195,6 +214,12 @@ video{
 #services h2{
     width: 48vw;
 }
+.services{
+    margin-top: 100px;
+}
+.services h3{
+    margin: 20px 0 24px;
+}
 .services>div{
     display: flex;
     flex-direction: column;
@@ -202,17 +227,20 @@ video{
     padding: 45px;
 }
 .services p{
-    font-size: 20px;
-    line-height: 28px; /* 140% */
+    font-size: 2em;
+    line-height: 140%; /* 28px */
     letter-spacing: -0.5px;
 }
 
 /*--portfolio-------------------*/
 .projects>div div{
     width: 28%;
-    padding: 1.6vw; /* 24px */
+    padding: 24px;
     border-radius: 14px;
     background: var(--bg-secondary-color);
+}
+.projects>div{
+    margin: 161px 0 260px;
 }
 .projects img{
     width: 100%;
@@ -220,20 +248,35 @@ video{
 }
 
 .projects h2{
-    font-size: 58px;
+    font-size: 5.8em;
     font-weight: 800;
 }
 
 /*--contact-us------------------*/
+article{
+    background: var(--bg-secondary-color-50);
+    height: 49.4vh;
+    align-items: center;
+}
 .contact-us h2{
     width: 57vw;
 }
 
 
 /*--footer----------------------*/
+footer{
+    height: 18.8vh;
+}
+footer>div{
+    align-items: center;
+    padding-top: 4.9vh; /* 50px; */
+}
 footer p{
-    font-size: 16px;
-    line-height: 38px; /* 237.5% */
+    font-size: 1.6em;
+    line-height: 237.5%; /* 38px */
     letter-spacing: -0.5px;
+}
+.links{
+    display: none;
 }
 
